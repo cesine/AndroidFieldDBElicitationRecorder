@@ -5,34 +5,27 @@
     android:baselineAligned="false"
     android:orientation="vertical" >
 
-    <LinearLayout
+    <fragment
+        android:id="@+id/editSessionFragment"
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_weight="70"
-        android:orientation="horizontal" >
+        android:layout_weight="40"
+        class="org.lingsync.elicitation.collection.EditSessionFragment" >
+    </fragment>
 
-        <fragment
-            android:id="@+id/editSessionFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            class="org.lingsync.elicitation.collection.EditSessionFragment" >
-        </fragment>
-
-        <fragment
-            android:id="@+id/playVideoFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="50"
-            class="org.lingsync.elicitation.collection.PlayVideoFragment" >
-        </fragment>
-    </LinearLayout>
+    <fragment
+        android:id="@+id/playVideoFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="40"
+        class="org.lingsync.elicitation.collection.PlayVideoFragment" >
+    </fragment>
 
     <LinearLayout
         android:id="@+id/videoThumbnailFragmentContainer"
         android:layout_width="match_parent"
         android:layout_height="0dip"
-        android:layout_weight="30"
+        android:layout_weight="20"
         android:orientation="horizontal" >
 
         <fragment
